@@ -4,7 +4,7 @@ data "google_project" "project" {
 resource "google_service_account" "dataform_sa" {
   count        = var.use_default_dataform_sa ? 0 : 1
   project      = var.project_id
-  account_id   = "${replace(var.usecase, "_", "-")}-sa-dataform-${var.env}"
+  account_id   = "${replace(var.usecase, "_", "-")}-sa-dataform"
   display_name = "Service Account used by Dataform to execute BigQuery transformations."
 }
 

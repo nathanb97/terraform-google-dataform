@@ -1,5 +1,5 @@
 resource "google_secret_manager_secret" "dataform_private_ssh_key" {
-  secret_id = "dataform-prvt-ssh-${var.usecase}-${var.env}"
+  secret_id = "dataform-prvt-ssh-${var.usecase}"
   replication {
     auto {
     }
