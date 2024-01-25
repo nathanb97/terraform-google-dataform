@@ -1,0 +1,11 @@
+# Local .terraform directories
+**/.terraform/**
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Exclude all .terraform files such as .terraform.lock.hcl
+.terraform*
+
+.DS_Store
